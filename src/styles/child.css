@@ -1,0 +1,223 @@
+.child {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-nav {
+    height: 8vh;
+    text-align: left;
+    width: 100vw;
+    color: #566066;
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    line-height: 1.61;
+}
+
+.child-image {
+    width: 100vw;
+    height: 60vh;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.child-image-head {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 400%;
+    -webkit-font-feature-settings: "pnum" on, "lnum" on;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: white;
+    margin-top: 3.5%;
+}
+
+.child-image-subhead {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 150%;
+    -webkit-font-feature-settings: "pnum" on, "lnum" on;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: white;
+    margin-top: 0.5%;
+}
+
+.child-datathree {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.child-datathree-ins0 {
+    content: "";
+    border: 2px solid transparent;
+    border-image: linear-gradient(180deg, #e709b0 0, #6709e2) 1 100%;
+    border-image-slice: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 4%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    margin-top: 0.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    animation-name: Slide0;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-align: right;
+}
+
+@keyframes Slide0 {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 45vw;
+    }
+}
+
+.child-datathree-ins1 {
+    content: "";
+    border: 2px solid transparent;
+    border-image: linear-gradient(180deg, #e709b0 0, #6709e2) 1 100%;
+    border-image-slice: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 4%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    margin-top: 0.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+.child-datathree-ins2 {
+    box-sizing: border-box;
+    margin-top: 0.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-left: 4%;
+    animation-name: Slide2;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-align: left;
+}
+
+@keyframes Slide2 {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 40vw;
+    }
+}
+
+.child-body {
+    color: #566066;
+    margin-top: 0.1rem;
+    font-size: 1.125rem;
+    line-height: 1.61;
+    margin-top: 2rem;
+    width: 80vw;
+}
+
+.child-button {
+    font-size: 1rem;
+    height: 3.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: #000;
+    padding: 0 3rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-family: "Avenir Next", Arial, sans-serif;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 2rem;
+    transition: all .25s ease-in-out;
+}
+
+.child-button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+.child-subhead {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 200%;
+    width: 80vw;
+    text-align: left;
+}
+
+.child-parent {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(min-width:500px) {
+    .child-datathree-ins0 {
+        border-bottom: 0px solid transparent;
+    }
+
+    .child-datathree-ins1 {
+        border-bottom: 0px solid transparent;
+    }
+
+    .child-datathree-ins2 {
+        border-bottom: 0px solid transparent;
+    }
+}
+
+@media(max-width:500px) {
+    .child-datathree-ins0 {
+        border-right: 0px solid transparent;
+        padding-bottom: 1%;
+        width: 180px;
+        text-align: center;
+    }
+
+    .child-datathree-ins1 {
+        border-right: 0px solid transparent;
+        padding-bottom: 1%;
+        width: 180px;
+    }
+
+    .child-datathree-ins2 {
+        border-right: 0px solid transparent;
+        padding-bottom: 1%;
+        text-align: center;
+    }
+
+    .child-datathree {
+        flex-direction: column;
+    }
+
+    .child-image-head {
+        font-size: 250%;
+    }
+
+    .child-image-subhead {
+        font-size: 100%;
+    }
+}

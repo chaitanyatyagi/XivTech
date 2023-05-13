@@ -1,0 +1,26 @@
+.childcard {
+    width: 290px;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.childcard-img {
+    width: 100%;
+    height: 28vh;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.childcard-data {
+    width: 100%;
+    height: 7vh;
+    padding-left: 10%;
+    padding-top: 4%;
+    font-weight: 200;
+    text-align: left;
+    font-size: 1.1rem;
+    color: blue;
+
+}
