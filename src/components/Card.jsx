@@ -2,8 +2,9 @@ import "../styles/card.css"
 import { Link } from "react-router-dom"
 
 export default function Card(props) {
+
     return (
-        <div className="cards">
+        <div className="cards" >
             <div className="card-left">
                 <h2 className="card-left-head">{props.data.head}</h2>
                 <h3 className="card-left-body">{props.data.body}</h3>
