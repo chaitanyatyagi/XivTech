@@ -93,7 +93,7 @@
 }
 
 @media(max-width:1100px) {
-    .card {
+    .cards {
         flex-direction: column;
         width: 70vw;
     }
